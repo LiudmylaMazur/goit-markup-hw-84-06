@@ -645,6 +645,24 @@ a {
 .input-icon:focus {
   fill: #4d5ae5;
 }
+.btn-submit {
+  height: 56px;
+  width: 169px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.btn-submit:hover {
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-comment {
   width: 100%;
   height: 120px;
@@ -662,13 +680,6 @@ a {
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
-}
-.input-check:checked + .check-text::before {
-  background-color: #404bbf;
-  border: none;
-  background-image: url(../image/check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .visually-hidden {
 }
@@ -696,25 +707,7 @@ a {
 .input-check:checked + .check-text::before {
   background-color: #404bbf;
   border: none;
-  background-image: url(../images/check.svg);
+  background-image: url(./image/check.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
-.btn-submit {
-  height: 56px;
-  width: 169px;
-  background-color: #4d5ae5;
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  align-items: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.04em;
-}
-.btn-submit:hover {
-  background-color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
