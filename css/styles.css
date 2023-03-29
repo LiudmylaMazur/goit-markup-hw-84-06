@@ -623,20 +623,26 @@ a {
 .modal-input {
   width: 100%;
   height: 40px;
-  border-color: transparent;
+  padding: 5px 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 8px;
-  color: #404bbf;
+  outline: transparent;
   font-size: 14px;
-  padding-left: 15px;
+  padding-left: 30px;
 }
+
 .input-icon {
   fill: #2e2f42;
   position: absolute;
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
+}
+.modal-input:focus {
+  border-color: var(--color-iris);
+}
+.modal-input:focus + .input-icon {
+  fill: var(--color-iris);
 }
 .input-icon:hover,
 .input-icon:focus {
@@ -707,4 +713,5 @@ a {
   background-image: url(./image/check.svg);
   background-repeat: no-repeat;
   background-position: center;
+  border-color: var(--color-iris);
 }
