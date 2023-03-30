@@ -686,8 +686,11 @@ a {
 }
 .visually-hidden {
 }
+
 .check-text {
   font-size: 14px;
+  font-weight: 600;
+  color: var(--color-light-slate);
   display: flex;
   align-items: center;
 }
@@ -710,7 +713,7 @@ a {
 .input-check:checked + .check-text::before {
   background-color: #404bbf;
   border: none;
-  background-image: url(./image/check.svg);
+  background-image: url(../image/check.svg);
   background-repeat: no-repeat;
   background-position: center;
   border-color: var(--color-iris);
