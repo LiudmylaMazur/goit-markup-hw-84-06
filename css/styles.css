@@ -688,11 +688,12 @@ a {
 }
 
 .check-text {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
   color: var(--color-light-slate);
   display: flex;
   align-items: center;
+  line-height: 1.17;
 }
 .check-text::before {
   content: "";
