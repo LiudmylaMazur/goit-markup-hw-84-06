@@ -562,11 +562,11 @@ a {
 }
 .modal {
   width: 408px;
-  min-height: 576px;
+  height: 576px;
   position: absolute;
   left: 50%;
   top: 50%;
-  padding: 24px;
+  padding: 72px 24px 24px;
   transform: translate(-50%, -50%);
   background-color: var(--color-dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -577,7 +577,9 @@ a {
 
 .button-close {
   display: block;
-  margin-left: auto;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   border-radius: 50%;
   background: var(--color-corn-flower);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -601,12 +603,14 @@ a {
   color: #2e2f42;
   text-align: center;
   margin-bottom: 16px;
-  margin-top: 24px;
 }
 .modal-form {
 }
 .modal-field {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+}
+.modal-field-accept {
+  margin-bottom: 24px;
 }
 .input-text {
   display: inline-block;
@@ -615,11 +619,12 @@ a {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: (var(--subtle-text));
+  color: var(--color-light-slate);
 }
 .input-wrap {
   position: relative;
 }
+
 .modal-input {
   width: 100%;
   height: 40px;
@@ -628,15 +633,17 @@ a {
   border-radius: 4px;
   outline: transparent;
   font-size: 14px;
-  padding-left: 30px;
+  padding-left: 38px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon {
   fill: #2e2f42;
   position: absolute;
-  left: 5px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
   border-color: var(--color-iris);
@@ -649,8 +656,8 @@ a {
   fill: #4d5ae5;
 }
 .btn-submit {
-  height: 56px;
-  width: 169px;
+  width: 170px;
+  height: 51px;
   background-color: #4d5ae5;
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -661,10 +668,17 @@ a {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-submit:hover {
   background-color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filed-comment {
+  margin-bottom: 16px;
 }
 .modal-comment {
   width: 100%;
@@ -756,4 +770,13 @@ a {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+}
+.foter-wrap {
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-input {
+  width: 264px;
+  height: 40px;
 }
