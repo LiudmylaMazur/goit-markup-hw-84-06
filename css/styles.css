@@ -449,6 +449,8 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
+  margin-top: 16px;
+  margin-right: 120px;
 }
 .section-footer-social {
   margin-right: 80px;
@@ -480,16 +482,17 @@ a {
   width: 264px;
   height: 40px;
   color: var(--color-width);
+  padding-left: 16px;
 }
 .footer-button {
-  height: 40px;
-  width: 168px;
+  min-width: 168px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8px 24px;
+  padding: 14px 24px;
+  padding-left: 0px;
   margin-left: 24px;
-  position: absolute;
+  position: relative;
   background-color: var(--color-iris);
   border-radius: 4px;
   color: var(--color-width);
@@ -620,20 +623,18 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 24px;
   width: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--color-navy-blue);
 }
 .button-close:hover,
 .button-close:focus {
   background-color: var(--color-ocean);
+  color: var(--color-width);
 }
 
 .close-icon {
-  fill: var(--color-navy-blue);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.close-icon:hover,
-.close-icon:focus {
-  fill: var(--color-width);
+  fill: currentColor;
 }
 
 .is-hidden {
@@ -798,8 +799,8 @@ a {
 }
 .foter-wrap {
   margin-top: 16px;
-  justify-content: center;
   align-items: center;
+  display: flex;
 }
 .footer-input {
   width: 264px;
